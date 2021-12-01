@@ -8,7 +8,7 @@ body {
     width: 80%;
     height: 100vh;
     position: fixed;
-    top: -100%;
+    top: -110%;
     right: 0;
     display: flex;
     align-items: center;
@@ -72,6 +72,9 @@ body {
 
 
 .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     margin-bottom: var(--sp5);
 }
@@ -104,6 +107,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+}
+
+.course-content {
+    width: 80%;
+    align-self: center;
 }
 
 .category-item {
