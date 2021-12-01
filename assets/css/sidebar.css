@@ -1,0 +1,64 @@
+.sidebar {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 999999;
+    background-color: white;
+}
+
+.sidebar-header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-header img {
+    padding: var(--sp3) 0;
+}
+
+nav.sidebar-content {
+    padding: var(--sp3);
+    height: 100%;
+}
+
+.sidebar nav.sidebar-content ul {
+    list-style-type: none;
+    padding-left: unset !important;
+}
+
+.sidebar nav.sidebar-content ul li {
+    padding: var(--sp4);
+    background-color: white;
+    margin: var(--sp3) 0;
+    border-radius: var(--sp3);
+    color: var(--dark);
+}
+
+.sidebar nav.sidebar-content ul li a {
+    text-decoration: none !important;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.sidebar nav.sidebar-content ul li a span {
+    margin-left: var(--sp2);
+}
+
+.sidebar nav.sidebar-content ul li:hover {
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    color: var(--dark);
+}
+
+.sidebar nav.sidebar-content ul li.active {
+    box-shadow: var(--shadow);
+    background-color: var(--primary);
+    color: white;
+}
+
+.sidebar nav.sidebar-content ul li.logout {
+    background-color: var(--danger);
+    color: white;
+}

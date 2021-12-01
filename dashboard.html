@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+
+    <meta content="Dashboard" name="description">
+    <meta content="HTML, CSS, Web Desen, PTIK, UNJ" name="keywords">
+    <meta content="UTS WebDes Teams 4| E-Learning" name="author">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="./assets/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="./assets/css/vars.css" rel="stylesheet">
+    <link href="./assets/css/sidebar.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+    <link href="./assets/img/logo-mini.png" rel="icon">
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/chartjs.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img alt="Logo" src="./assets/img/logo.png"/>
+        </div>
+        <nav class="sidebar-content">
+            <ul>
+                <li class="active" data-content="pages/dashboard.html" data-title="Dashboard">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li data-content="pages/courses.html" data-title="Courses">
+                    <i class="fas fa-book"></i>
+                    <span>Courses</span>
+                </li>
+                <li data-content="pages/grades.html" data-title="Grades">
+                    <i class="fas fa-medal"></i>
+                    <span>Grades</span>
+                </li>
+                <li class="logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="loading loading-close">
+        <div class="loading-icon">
+            <img alt="#" src="assets/img/logo-mini.png"/>
+        </div>
+    </div>
+    <div class="content-wrapper">
+    </div>
+</div>
+
+<script src="./assets/js/main.js"></script>
+<script type="application/javascript">
+    if (!isLoggedIn()) window.location.href = "auth"
+</script>
+</body>
+</html>

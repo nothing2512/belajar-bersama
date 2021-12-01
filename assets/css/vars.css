@@ -1,0 +1,43 @@
+:root {
+    --gray: #eeeeee;
+    --gray-dark: #494949;
+    /*--primary: #00a6ff;*/
+    --primary: #1f8037;
+    --secondary: #acacac;
+    --success: #3ac65b;
+    --info: #05d4ff;
+    /*--warning: #f6ef13;*/
+    --warning: #faf403;
+    --danger: #dc4071;
+    /*--light: #f2f6f8;*/
+    --light: #eeeeee;
+    --dark: #343a40;
+    --sp1: .25rem !important;
+    --sp2: .5rem !important;
+    --sp3: 1rem !important;
+    --sp4: 1.5rem !important;
+    --sp5: 3rem !important;
+    --shadow: 0 .5rem .5rem rgba(0, 0, 0, .15);
+}
+
+.bg-white {background-color: white  !important;}
+.bg-primary {background-color: var(--primary) !important;}
+.bg-secondary {background-color: var(--secondary) !important;}
+.bg-success {background-color: var(--success) !important;}
+.bg-info {background-color: var(--info) !important;}
+.bg-warning {background-color: var(--warning) !important;}
+.bg-danger {background-color: var(--danger) !important;}
+.bg-light {background-color: var(--light) !important;}
+.bg-dark {background-color: var(--dark) !important;}
+
+.text-white {color: white !important}
+.text-primary {color: var(--primary) !important}
+.text-secondary {color: var(--secondary) !important}
+.text-success {color: var(--success) !important}
+.text-info {color: var(--info) !important}
+.text-warning {color: var(--warning) !important}
+.text-danger {color: var(--danger) !important}
+.text-light {color: var(--light) !important}
+.text-dark {color: var(--dark) !important}
+
+.pm-0 {padding: 0 !important; margin: 0 !important;}

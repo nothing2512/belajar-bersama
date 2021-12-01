@@ -1,0 +1,339 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--light);
+}
+
+.loading {
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: -100%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9997;
+    background-color: var(--primary);
+    -webkit-transition:all .25s ease;
+    -moz-transition:all .25s ease;
+    -o-transition:all .25s ease;
+    transition:all .25s ease;
+}
+
+.loading::before {
+    width: 100%;
+    height: 100vh;
+    content: '';
+    top: -120%;
+    right: -10%;
+    transform: rotate(-5deg);
+    position: fixed;
+    background-color: var(--warning);
+    -webkit-transition:all .25s ease;
+    -moz-transition:all .25s ease;
+    -o-transition:all .25s ease;
+    transition:all .25s ease;
+}
+
+.loading-close.loading::before {
+    top: 50%;
+}
+
+.loading-icon {
+    width: 128px;
+    height: 128px;
+    background-color: white;
+    padding: var(--sp5);
+    z-index: 9999;
+    border-radius: 10rem;
+}
+
+.loading-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.loading-close {
+    top: 0 !important;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content-wrapper {
+    width: 80%;
+    margin-left: 20vw;
+    padding: var(--sp4);
+}
+
+
+.content {
+    width: 100%;
+    margin-bottom: var(--sp5);
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search {
+    padding: var(--sp2) var(--sp4);
+    border-radius: var(--sp3);
+    color: var(--secondary);
+    background-color: white;
+}
+
+.search input {
+    width: 90%;
+    border: none !important;
+    padding: var(--sp2);
+    font-size: 14pt;
+}
+
+.search input:focus-visible {
+    outline: none !important;
+}
+
+.courses-container,
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.category-item {
+    width: 15%;
+    padding: var(--sp2);
+    color: var(--dark);
+}
+
+.category-item.active .category {
+    background-color: var(--warning);
+}
+
+.category {
+    border-radius: var(--sp3);
+    padding: var(--sp2);
+    text-align: center;
+    background-color: white;
+}
+
+.category:hover {
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+
+.category img {
+    width: 75%;
+}
+
+.category .category-text {
+    margin-top: var(--sp2);
+    font-weight: bold;
+    text-align: center;
+    color: var(--dark);
+}
+
+.courses-item {
+    width: 47.5%;
+    max-height: 30%;
+    overflow: hidden;
+    background-color: white;
+    margin: var(--sp3);
+    border-radius: var(--sp3);
+    color: var(--dark);
+    box-shadow: var(--shadow);
+}
+
+.courses-item:nth-child(odd) {
+    margin-left: 0;
+    margin-right: 2.5%;
+}
+
+.courses-item:nth-child(even) {
+    margin-left: 2.5%;
+    margin-right: 0;
+}
+
+.courses-item .courses {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--sp3);
+    padding-bottom: 0 !important;
+}
+
+.courses-item .courses img {
+    width: 30%;
+    border-radius: var(--sp3);
+    object-fit: cover;
+}
+
+.courses-item .courses-item-info {
+    padding: var(--sp3);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column-reverse;
+}
+
+.courses-item .courses-item-info .courses-item-info-title {
+    margin: 0 !important;
+}
+
+.courses-item .courses-item-info-desc {
+    margin: 0 0 var(--sp2);
+    padding: 0 !important;
+}
+
+.courses-item .courses-item-info .courses-item-info-category {
+    margin: 0 !important;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.courses-item .courses-item-info .courses-item-info-button {
+    margin-top: var(--sp2);
+    padding: var(--sp2);
+    background-color: var(--info);
+    border: none !important;
+    border-radius: var(--sp2);
+    color: white;
+}
+
+.courses-item .courses-item-info .courses-item-info-button-pro {
+    margin-top: var(--sp2);
+    padding: var(--sp2);
+    background-color: var(--primary);
+    border: none !important;
+    border-radius: var(--sp2);
+    color: white;
+}
+
+.courses-item .courses-item-info .courses-item-info-button:hover {
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+
+.courses-item .courses-item-info .courses-item-info-button-pro:hover {
+    cursor: not-allowed;
+}
+
+.card {
+    background-color: white;
+    border-radius: var(--sp3);
+    padding: var(--sp3);
+    margin: var(--sp3);
+    box-shadow: var(--shadow);
+}
+
+.card-title {
+    padding: 0;
+    margin: 0 0 var(--sp3);
+    text-align: center;
+}
+
+.profile-photo {
+    width: 30%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--sp3);
+}
+
+.profile-info {
+    width: 60%;
+    padding: var(--sp3);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.profile-name {
+    padding: 0;
+    margin: 0 0 var(--sp2);
+}
+
+.profile-desc {
+    padding: 0;
+    margin: 0;
+}
+
+.activity-info-icon {
+    font-size: 32pt;
+    margin-right: var(--sp3);
+}
+
+.activity-info-text {
+    margin: 0;
+    padding: 0;
+}
+
+.activity-image {
+    width: 20%;
+    border-radius: var(--sp3);
+    object-fit: cover;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: var(--sp3);
+}
+
+.form-group label {
+    font-size: 18pt;
+}
+
+.form-group input,
+.form-group textarea {
+    margin-top: var(--sp2);
+    resize: none;
+    border-radius: var(--sp3);
+    padding: var(--sp3);
+    font-size: 14pt;
+}
+
+.submit-button {
+    width: 100%;
+    margin-top: var(--sp2);
+    padding: var(--sp2);
+    background-color: var(--primary);
+    border: none !important;
+    border-radius: var(--sp2);
+    font-size: 18pt;
+    color: white;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
+
+.auth-icon {
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    padding: var(--sp2);
+    border-radius: 10rem;
+}
+
+.auth-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.auth-container {
+    width: 80vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: linear-gradient(180deg, rgba(52, 58, 64, .5), rgba(52, 58, 64, .5)),
+        url("../img/bg-unj.jpeg") !important;
+}
