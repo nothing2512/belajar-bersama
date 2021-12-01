@@ -66,6 +66,9 @@ body {
 
 .content-wrapper {
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-left: 20vw;
     padding: var(--sp4);
 }
