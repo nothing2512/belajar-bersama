@@ -65,10 +65,7 @@ body {
 }
 
 .content-wrapper {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    width: 100%;
     margin-left: 20vw;
     padding: var(--sp4);
 }
@@ -78,8 +75,12 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     margin-bottom: var(--sp5);
+}
+
+.course-content {
+    width: 80%;
 }
 
 .d-flex {
