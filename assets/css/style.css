@@ -345,3 +345,9 @@ body {
     background-image: linear-gradient(180deg, rgba(52, 58, 64, .5), rgba(52, 58, 64, .5)),
         url("../img/bg-unj.jpeg") !important;
 }
+
+@media (max-width: 1280px) {
+    .course-content {
+        width: 100%;
+    }
+}
