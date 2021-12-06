@@ -284,6 +284,12 @@ body {
     object-fit: cover;
 }
 
+.grades-image {
+    width: 20%;
+    border-radius: var(--sp3);
+    object-fit: cover;
+}
+
 .form-group {
     display: flex;
     flex-wrap: wrap;
