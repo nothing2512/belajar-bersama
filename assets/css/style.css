@@ -2,6 +2,15 @@ body {
     padding: 0;
     margin: 0;
     background-color: var(--light);
+    font-family: 'Poppins', sans-serif;
+}
+
+hr.hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;
+    height: 1px;
 }
 
 .loading {
@@ -199,7 +208,7 @@ body {
 
 .courses-item .courses-item-info .courses-item-info-category {
     margin: 0 !important;
-    font-weight: bold;
+    font-weight: 500;
     color: var(--secondary);
 }
 
@@ -273,9 +282,15 @@ body {
     margin-right: var(--sp3);
 }
 
+.activity-info-text-count,
 .activity-info-text {
     margin: 0;
     padding: 0;
+    font-weight: 500;
+}
+
+.activity-info-text-count {
+    font-weight: 600;
 }
 
 .activity-image {
